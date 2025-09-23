@@ -1,103 +1,95 @@
+import { NextPage } from "next";
 import Image from "next/image";
+import Link from "next/link";
+import { HiChevronRight } from "react-icons/hi2";
+import {
+  PiInstagramLogoFill,
+  PiLinkedinLogoFill,
+  PiSoundcloudLogoFill,
+  PiTiktokLogoFill,
+  PiYoutubeLogoFill,
+} from "react-icons/pi";
 
-export default function Home() {
+const Home: NextPage = () => {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
+    <main className="max-w-sm mx-auto">
+      <div className="relative w-full h-[54dvh] bg-dark/5">
         <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
+          src="/images/weerworks.jpg"
+          alt="Profile Image"
+          fill
+          sizes="100vw"
+          className="object-cover"
         />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+      </div>
+      <div className="bg-gradient-to-b from-white/0 to-20% to-white backdrop-blur-xs w-full py-[42px] px-8 min-h-80 -mt-36 relative z-10">
+        <div className="flex items-center gap-x-2 mb-1">
+          <h1 className="text-2xl font-medium text-dark">Ari Wiradana</h1>
+          <Image
+            src="/images/check.png"
+            alt="Check Icon"
+            width={28}
+            height={28}
+            sizes="28px"
+          />
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+        <p className="text-base text-dark/60 leading-6">
+          I build websites and craft music — from coding to mixing & mastering.
+        </p>
+        <div className="flex items-center gap-x-4 text-dark text-xl mt-5">
+          <Link href="https://www.linkedin.com/in/ariwiradana" target="_blank">
+            <PiLinkedinLogoFill />
+          </Link>
+          <Link href="https://instagram.com/ariwiradana" target="_blank">
+            <PiInstagramLogoFill />
+          </Link>
+          <Link href="https://tiktok.com/@itsweer" target="_blank">
+            <PiTiktokLogoFill />
+          </Link>
+          <Link href="https://soundcloud.com/itsweer" target="_blank">
+            <PiSoundcloudLogoFill />
+          </Link>
+          <Link href="https://youtube.com/@weerworks" target="_blank">
+            <PiYoutubeLogoFill />
+          </Link>
+        </div>
+        <p className="text-dark mb-2 mt-8">Owned & Operated</p>
+        <div className="flex flex-col gap-y-0.5">
+          <Link
+            href="https://notsokoplo.com"
+            target="_blank"
+            className="flex justify-between pl-4 pr-2 py-3 bg-dark/5 hover:bg-dark/7 text-dark items-center"
+          >
+            <p>notsokoplo.com</p>
+            <HiChevronRight />
+          </Link>
+          <Link
+            href="https://momentinvitation.com"
+            target="_blank"
+            className="flex justify-between pl-4 pr-2 py-3 bg-dark/5 hover:bg-dark/7 text-dark items-center"
+          >
+            <p>momentinvitation.com</p>
+            <HiChevronRight />
+          </Link>
+          <Link
+            href="https://wanajiwa.com"
+            target="_blank"
+            className="flex justify-between pl-4 pr-2 py-3 bg-dark/5 hover:bg-dark/7 text-dark items-center"
+          >
+            <p>wanajiwa.com</p>
+            <HiChevronRight />
+          </Link>
+        </div>
+        <div className="mt-8">
+          <Link target="_blank" href="https://wa.me/6281246768627">
+            <button className="w-full p-4 rounded-full bg-dark text-white font-medium">
+              Get In Touch
+            </button>
+          </Link>
+        </div>
+      </div>
+    </main>
   );
-}
+};
+
+export default Home;
