@@ -10,15 +10,15 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Weerworks - Built Platforms & Creations",
   description:
-    "Kumpulan platform dan karya yang dibuat dan dikelola oleh Weer: web development, musik, jingle, mixing, mastering, dan berbagai proyek kreatif.",
+    "A collection of platforms and creative works built and managed by Weer: web development, music, jingles, mixing, mastering, and more creative projects.",
   keywords: [
     "Weer",
     "web development",
-    "musik",
+    "music",
     "jingle",
     "mixing",
     "mastering",
-    "platform kreatif",
+    "creative platform",
     "Not So Koplo",
     "Moment Invitation",
     "Wana Jiwa",
@@ -29,29 +29,29 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Weerworks - Built Platforms & Creations",
     description:
-      "Temukan semua platform dan karya buatan Weer: website, musik, jingle, mixing, mastering, dan banyak lagi.",
-    url: "https://weerworks.com",
+      "Discover all the platforms and creations by Weer: websites, music, jingles, mixing, mastering, and more.",
+    url: "https://weerworks.live",
     siteName: "Weer Platforms",
     images: [
       {
-        url: "https://weerworks.com/og-image.jpg",
+        url: "https://weerworks.live/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Weer Platforms & Creations",
       },
     ],
-    locale: "id_ID",
+    locale: "en_US",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "Weerworks - Built Platforms & Creations",
     description:
-      "Kumpulan platform dan karya yang dibuat dan dikelola oleh Ari Wiradana.",
-    images: ["https://weerworks.com/og-image.jpg"],
+      "A collection of platforms and creative works built and managed by Ari Wiradana.",
+    images: ["https://weerworks.live/og-image.jpg"],
   },
   alternates: {
-    canonical: "https://weerworks.com",
+    canonical: "https://weerworks.live",
   },
 };
 
