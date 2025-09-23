@@ -34,7 +34,7 @@ const Home: NextPage = () => {
           />
         </div>
         <p className="text-base text-dark/60 leading-6">
-          I build websites and craft music — From technology to creativity.
+          I build websites and craft music — from technology to creativity.
         </p>
         <div className="flex items-center gap-x-4 text-dark text-xl mt-5">
           <Link href="https://www.linkedin.com/in/ariwiradana" target="_blank">
