@@ -53,8 +53,37 @@ const Home: NextPage = () => {
             <PiYoutubeLogoFill />
           </Link>
         </div>
-        <p className="text-dark mb-2 mt-8">Owned & Operated</p>
-        <div className="flex flex-col gap-y-0.5">
+        <p className="text-dark mb-1.5 mt-8">Hire me on</p>
+        <div className="flex flex-col border border-dark/10 divide-y divide-dark/10">
+          {/* <Link
+            href="https://www.fiverr.com/s/YRNlmWp"
+            target="_blank"
+            className="flex justify-center px-4 h-12 text-white items-center"
+          >
+            <Image
+              src="/images/fiverr.png"
+              alt="Logo Fiverr"
+              width={60}
+              height={60}
+              sizes="60px"
+            />
+          </Link> */}
+          <Link
+            href="https://fastwork.id/user/ariwiradana"
+            target="_blank"
+            className="flex justify-center px-4 h-12 text-white items-center"
+          >
+            <Image
+              src="/images/fastwork.png"
+              alt="Logo Fastwork"
+              width={120}
+              height={120}
+              sizes="120px"
+            />
+          </Link>
+        </div>
+        <p className="text-dark mb-1.5 mt-8">Things i run</p>
+        <div className="flex flex-col divide-y divide-white">
           <Link
             href="https://notsokoplo.com"
             target="_blank"
