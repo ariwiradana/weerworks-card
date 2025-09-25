@@ -101,11 +101,11 @@ const Home: NextPage = () => {
             <HiChevronRight />
           </Link>
           <Link
-            href="https://wanajiwa.com"
+            href="https://jagadana.com"
             target="_blank"
             className="flex justify-between pl-4 pr-2 py-3 bg-dark/5 hover:bg-dark/7 text-dark items-center"
           >
-            <p>wanajiwa.com</p>
+            <p>jagadana.com</p>
             <HiChevronRight />
           </Link>
         </div>
